@@ -1,0 +1,214 @@
+/* font-family: 'Montserrat', sans-serif; */
+
+/* font-family: 'Playfair Display', serif; */
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0 11px;
+    font-family: 'Montserrat', sans-serif;
+    background: #FFFFFF;
+}
+
+header {
+    margin: 32px 0;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 24px;
+    max-width: 323px;
+}
+
+header p {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 12px;
+    position: relative;
+    color: #4F4F4F;
+    margin-left: 25px;
+    max-width: 320px;
+}
+
+header p::before{
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 8px;
+    background: url("../images/6dots.svg");
+    transform: translate(-20px, 4px);
+}
+
+header img {
+    width: 100%;
+}
+
+/*********************************************************/
+
+
+section.cooking-info .yield,
+section.cooking-info .prep .time {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+section.cooking-info .prep {
+    display: flex;
+}
+
+section.cooking-info .prep .time {
+    margin:0 auto;
+}
+
+section.cooking-info .prep .time:first-child {
+    margin-left: 0;
+}
+
+section.cooking-info .yield .icon {
+    width: 17px;
+    height: 17px;
+    background: url("../images/local_dining_black_24dp.svg");
+    background-size: cover;
+    background-position: center center;
+    margin-right: 0.25rem;
+    transform: translateY(25%);
+}
+
+
+section.cooking-info .prep .icon {
+    width: 17px;
+    height: 17px;
+    background: url("../images/query_builder_black_24dp.svg");
+    background-size: cover;
+    background-position: center center;
+    margin-right: 0.25rem;
+    transform: translateY(25%);
+}
+
+section.cooking-info span {
+    font-weight: 700;
+    font-size: 8px;
+    text-transform: uppercase;
+    color: #BDBDBD;
+}
+
+section.cooking-info p {
+    font-weight: 500;
+    font-size: 10px;
+    color: #333333;
+    margin: 0;
+}
+
+/********************************************************/
+
+section.ingredients {
+    margin: 2rem 0;
+    max-width: 22rem;
+}
+
+section.ingredients h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #333333;
+}
+section.ingredients h3 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    color: #333333;
+}
+
+
+section.ingredients input[type="checkbox"]{
+    position:absolute;
+    left: -0.25rem;
+    width: 1.25em;
+    height: 1.25em;
+}
+
+section.ingredients label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #333333;
+}
+
+section.ingredients .list-1 div,
+section.ingredients .list-2 div{
+    padding: .25rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+/*********************************************************/
+
+section.instructions {
+    margin: 2rem 0;
+    max-width: 22rem;
+}
+
+section.instructions h2 {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333333;
+}
+
+section.instructions p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 3rem;
+    color: #000000;
+    position: relative;
+    counter-increment: section;
+}
+
+section.instructions p::before{
+    content: counters(section, "");
+    /* content: ''; */
+    width: 2.25rem;
+    height: 2.25rem;
+    background: #F2994A;
+    position: absolute;
+    transform: translateX(-125%);
+    border-radius: 6px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 24px;
+    padding-bottom: 6px;
+
+    color: #FFFFFF;
+}
+
+section.instructions .source{
+    font-size: 12px;
+    line-height: 150%;
+    color: #BDBDBD;
+    padding-left: 1rem;
+}
+
+footer{
+    margin-top: auto;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+
+    color: #828282;
+}
+
